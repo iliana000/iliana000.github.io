@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fomina Evgenia | Test task</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+
+    <link rel="shortcut icon" type="image/png" href="png/ui.png"/>
+
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="ui-panel">
+
+        <!-- panel header with navigation, search and user menu -->
+        <header class="panel-header">
+          <nav class="header-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-search input-right-icon">
+            <i class="ui-icons icon-magnifier"></i>
+            <input type="search" placeholder="Search..." class="search-input">
+          </div>
+          <div class="user-menu">
+            <div class="new-notifications">
+              <i class="ui-icons icon-bell"></i>
+              <div class="count">4</div>
+            </div>
+            <div class="new-messages">
+              <i class="ui-icons icon-bubble"></i>
+              <div class="count">14</div>
+            </div>
+            <div class="user-avatar">
+              <img src="png/avatar-self.png" alt="">
+            </div>
+          </div>
+        </header>
+
+
+
+        <div class="panel-main clearfix">
+          <div class="row clearfix">
+            <!-- switchers -->
+            <div class="type">
+              <div class="block">
+                <label for="round-switcher1" class="switcher round-switcher off">
+                  <input id="round-switcher1" type="checkbox" name="round-switcher">          
+                  <div class="switcher-track clearfix">
+                    <div class="switcher-thumb"></div>
+                    <span class="switcher-on">on</span>
+                    <span class="switcher-off">off</span>
+                  </div>
+                </label>
+                <label for="round-switcher2" class="switcher round-switcher on">
+                  <input id="round-switcher2" type="checkbox" name="round-switcher" checked>          
+                  <div class="switcher-track clearfix">
+                    <div class="switcher-thumb"></div>
+                    <span class="switcher-on">on</span>
+                    <span class="switcher-off">off</span>
+                  </div>
+                </label>
+              </div>
+  
+  
+              <div class="block">
+                <label for="square-switcher1" class="switcher square-switcher off">
+                  <input id="square-switcher1" type="checkbox" name="square-switcher">          
+                  <div class="switcher-track clearfix">
+                    <div class="switcher-thumb"></div>
+                    <span class="switcher-on">
+                      <i class="ui-icons icon-check"></i>
+                    </span>
+                    <span class="switcher-off">
+                      <i class="ui-icons icon-close"></i>
+                    </span>
+                  </div>
+                </label>
+                <label for="square-switcher2" class="switcher square-switcher on">
+                  <input id="square-switcher2" type="checkbox" name="square-switcher" checked>          
+                  <div class="switcher-track clearfix">
+                    <div class="switcher-thumb"></div>
+                    <span class="switcher-on">
+                      <i class="ui-icons icon-check"></i>
+                    </span>
+                    <span class="switcher-off">
+                      <i class="ui-icons icon-close"></i>
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+            
+            <!-- checkboxes and radiobuttons -->
+            <div class="type">
+              <div class="block">
+                <label for="checkbox1" class="checkbox">
+                  <input id="checkbox1" type="checkbox" name="checkbox">
+                  <div class="figure"></div>        
+                  <span class="switcher-track clearfix">Default</span>
+                </label>
+                <label for="radio1" class="radio">
+                  <input id="radio1" type="radio" name="radio">
+                  <div class="figure"></div>        
+                  <span class="switcher-track clearfix">Default</span>
+                </label>
+              </div>
+  
+              <div class="block">
+                <label for="checkbox2" class="checkbox hover">
+                  <input id="checkbox2" type="checkbox" name="checkbox">
+                  <div class="figure"></div>        
+                  <span class="switcher-track clearfix">Hover</span>
+                </label>
+                <label for="radio2" class="radio hover">
+                  <input id="radio2" type="radio" name="radio">
+                  <div class="figure"></div>        
+                  <span class="switcher-track clearfix">Hover</span>
+                </label>
+              </div>
+              
+              <div class="block">
+                <label for="checkbox3" class="checkbox">
+                  <input id="checkbox3" type="checkbox" name="checkbox" checked>
+                  <div class="figure"></div>        
+                  <span class="switcher-track clearfix">Selected</span>
+                </label>
+                <label for="radio3" class="radio">
+                  <input id="radio3" type="radio" name="radio" checked>
+                  <div class="figure"></div>        
+                  <span class="switcher-track clearfix">Selected</span>
+                </label>
+              </div>
+            </div>
+            <!-- different diagrams -->
+            <div class="type">
+              <div class="block">
+                <div class="circle-chart">
+                  <span>66%</span>
+                  <div class="chart-progress"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="type">
+              <div class="block">
+                <div class="pie-chart">
+                  <div class="chart-progress"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="pie-diagram">
+              <div class="pie" data-start="0" data-value="30"></div>
+              <div class="pie highlight" data-start="30" data-value="30"></div>
+              <div class="pie" data-start="60" data-value="40"></div>
+              <div class="pie big" data-start="100" data-value="260"></div>
+            </div> -->
+          </div>
+
+
+
+          <div class="column-third">
+
+            <!-- sign in form -->
+            <div class="widget sign-in">
+              <div class="widget-header">Sign in</div>
+              <div class="widget-content clearfix">
+                <form action="">
+                  <div class="input-left-icon">
+                    <i class="ui-icons icon-male-user"></i>
+                    <input type="text" placeholder="Login" class="user-input active" value="John D">
+                  </div>
+                  <div class="input-left-icon">
+                    <i class="ui-icons icon-lock"></i>
+                    <input type="password" placeholder="Password" class="password-input">
+                  </div>
+
+                  <button class="button submit-button">log in</button>
+                </form>
+              </div>
+            </div>
+
+            <!-- select box -->
+
+            <div class="select">
+              <select class="select-hidden">
+                <option value="hide">Select Something</option>
+                <option value="first">First option</option>
+                <option value="another">Another option</option>
+                <option value="enough">OK, that's enough</option>
+              </select>
+              <div class="select-styled">
+                Select Something
+                <i class="arrow"></i>
+              </div>
+              <ul class="select-options">
+                <li rel="hide">Select Something</li>
+                <li rel="first">First option</li>
+                <li rel="another">Another option</li>
+                <li rel="enough">OK, that's enough</li>
+              </ul>
+            </div>
+
+
+
+          </div>
+
+          <div class="column-third">
+            <!-- calendar -->
+            <div class="calendar widget">
+              <div class="widget-header">
+                <div class="ui-icons icon-left-arrow"></div>
+                <div class="ui-icons icon-right-arrow"></div>
+                October 2016
+              </div>
+
+              <div class="widget-content weekdays">
+                <div class="clearfix">
+                  <div class="weekday">su</div>
+                  <div class="weekday">mo</div>
+                  <div class="weekday">tu</div>
+                  <div class="weekday">we</div>
+                  <div class="weekday">th</div>
+                  <div class="weekday">fr</div>
+                  <div class="weekday">sa</div>
+                </div>
+              </div>
+
+              <div class="widget-content">
+                <div class="month clearfix">
+                  <div class="day inactive"><a></a></div>
+                  <div class="day inactive"><a></a></div>
+                  <div class="day inactive"><a></a></div>
+                  <div class="day"><a>1</a></div>
+                  <div class="day"><a>2</a></div>
+                  <div class="day"><a>3</a></div>
+                  <div class="day"><a>4</a></div>
+
+                  <div class="day"><a>5</a></div>
+                  <div class="day"><a>6</a></div>
+                  <div class="day"><a>7</a></div>
+                  <div class="day"><a>8</a></div>
+                  <div class="day"><a>9</a></div>
+                  <div class="day"><a>10</a></div>
+                  <div class="day"><a>11</a></div>
+
+                  <div class="day"><a>12</a></div>
+                  <div class="day"><a>13</a></div>
+                  <div class="day"><a>14</a></div>
+                  <div class="day selected-boundary"><a>15</a></div>
+                  <div class="day selected"><a>16</a></div>
+                  <div class="day selected"><a>17</a></div>
+                  <div class="day selected"><a>18</a></div>
+
+                  <div class="day selected"><a>19</a></div>
+                  <div class="day selected"><a>20</a></div>
+                  <div class="day selected"><a>21</a></div>
+                  <div class="day selected"><a>22</a></div>
+                  <div class="day selected"><a>23</a></div>
+                  <div class="day selected-boundary"><a>24</a></div>
+                  <div class="day"><a>25</a></div>
+
+                  <div class="day"><a>26</a></div>
+                  <div class="day"><a>27</a></div>
+                  <div class="day"><a>28</a></div>
+                  <div class="day"><a>29</a></div>
+                  <div class="day"><a>30</a></div>
+                  <div class="day"><a>31</a></div>
+                  <div class="day inactive"><a></a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user-card widget">
+              <div class="widget-content clearfix">
+                <div class="user-avatar">
+                  <img src="png/avatar-foreign.png" alt="">
+                </div>
+                <h2 class="user-name">Emma Stone</h2>
+                <div class="user-about">
+                  The Amazing Spider-Man,<br>Gangster Squad,<br>The Croods
+                </div>
+              </div>
+              <div class="user-statistics clearfix">
+                <div class="likes">
+                  <i class="ui-icons icon-heart"></i>172
+                </div>
+                <div class="friends">
+                  <i class="ui-icons icon-friends"></i>34
+                </div>
+                <div class="views">
+                  <i class="ui-icons icon-eye"></i>210
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="column-third">
+            <div class="range-slider slider-blue slider-value-25">
+              <div class="slider-track"></div>
+              <i class="slider-thumb">
+                <div class="value-tooltip">30</div>
+              </i>
+            </div>
+            <div class="range-slider slider-green slider-value-15-75">
+              <div class="slider-track"></div>
+              <div class="slider-range"></div>
+              <i class="slider-thumb"></i>
+              <i class="slider-thumb"></i>
+              <div class="graduations">
+                <div class="value-graduation">0</div>
+                <div class="value-graduation">25</div>
+                <div class="value-graduation">50</div>
+                <div class="value-graduation">75</div>
+                <div class="value-graduation">100</div>
+              </div>
+            </div>
+            <div class="range-slider slider-orange slider-value-0-75">
+              <div class="slider-track"></div>
+              <div class="slider-range"></div>
+              <i class="slider-thumb"></i>
+              <i class="slider-thumb"></i>
+              <div class="graduations">
+                <div class="min">0%</div>
+                <div class="max">100%</div>
+              </div>
+            </div>
+
+            <video src="" controls poster="png/video-poster.png"></video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/select.js"></script>
+  </body>
+</html>
