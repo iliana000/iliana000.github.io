@@ -545,7 +545,7 @@ $select-height: 32px;
 
 .select-styled.active + .select-options {
 	display: block;
-	z-index: 99;
+	z-index: 90;
 }
 
 .select-options {

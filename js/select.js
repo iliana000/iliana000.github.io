@@ -1,83 +1,44 @@
-    // var select = document.querySelector('.select');
+document.querySelectorAll('.select').forEach(function(item, i, arr) {
 
-    // var styledSelect = document.querySelector('div.select-styled');
-
-    // var list = document.querySelector('.select ul');
-
-    // var listItems = list.childNodes;
-  
-    // styledSelect.onclick = function(e) {
-    //     styledSelect.classList.toggle('active');
-    //     e.stopPropagation();
-    // };
-
-
-    // list.onclick = function(e) {
-
-    //     if (e.target.tagName != 'LI') return;
-
-    //     e.stopPropagation();
-
-    //     styledSelect.firstChild.textContent = e.target.textContent;
-
-    //     styledSelect.classList.toggle('active');
-    //     select.value = e.target.getAttribute('rel');
-    // };
-  
-    // document.documentElement.onclick = function() {
-    //     styledSelect.classList.remove('active');
-    // };
-    
-
-document.onclick = function(e) {
-    console.log("1 select.querySelector('div.select-styled').classList", document.querySelector('div.select-styled').classList);
-    var select = e.target;
-      while (select != document) {
-        if (select.classList.contains("select") ) {
-          break;
-        }
-        if (select == document.documentElement)  {
-          return;
-        }
-        select = select.parentNode;
-      }
+    var select = item;
 
     var styledSelect = select.querySelector('div.select-styled');
-    console.log("1 styledSelect.classList", styledSelect.classList);
+console.dir(styledSelect);
 
     var list = select.querySelector('.select ul');
 
     var listItems = list.childNodes;
   
+    // toggling option list  
+    styledSelect.addEventListener( "click" , function(e) {
+        // closing all other selects
+        document.querySelectorAll('.select-styled').forEach(function(item, i, arr) {
 
-    var target = e.target;
+            if (item != styledSelect) {
+                item.classList.remove('active');
+            }
 
-      while (target != document) {
+        });
 
-        if (target == styledSelect) {
-            console.log("1 styledSelect.classList.contains('active')", styledSelect.classList.contains('active'))
-            styledSelect.classList.toggle('active');
-            console.log("2 styledSelect.classList.contains('active')", styledSelect.classList.contains('active'))
-            e.stopPropagation();
-        };
+        styledSelect.classList.toggle('active');
+        e.stopPropagation();
+    });
 
-        if (target == list) {
+    // chosing option and closing list
+    list.addEventListener( "click" , function(e) {
 
-            if (e.target.tagName != 'LI') return;
+        if (e.target.tagName != 'LI') return;
 
-            e.stopPropagation();
+        e.stopPropagation();
 
-            styledSelect.firstChild.textContent = e.target.textContent;
+        styledSelect.firstChild.textContent = e.target.textContent;
 
-            styledSelect.classList.remove('active');
-            select.value = e.target.getAttribute('rel');
-        };
-        
-        target = target.parentNode;
-      }
-
-  
-    document.documentElement.onclick = function() {
         styledSelect.classList.remove('active');
-    };
-}
+        select.value = e.target.getAttribute('rel');
+    });
+  
+    // closing list when click elsewhere
+    document.documentElement.addEventListener( "click" , function() {
+        styledSelect.classList.remove('active');
+    });
+});
