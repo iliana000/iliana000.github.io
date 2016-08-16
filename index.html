@@ -58,17 +58,17 @@
                 <label for="round-switcher1" class="switcher round-switcher off">
                   <input id="round-switcher1" type="checkbox" name="round-switcher">          
                   <div class="switcher-track clearfix">
-                    <div class="switcher-thumb"></div>
                     <span class="switcher-on">on</span>
                     <span class="switcher-off">off</span>
+                    <div class="switcher-thumb"></div>
                   </div>
                 </label>
                 <label for="round-switcher2" class="switcher round-switcher on">
                   <input id="round-switcher2" type="checkbox" name="round-switcher" checked>          
                   <div class="switcher-track clearfix">
-                    <div class="switcher-thumb"></div>
                     <span class="switcher-on">on</span>
                     <span class="switcher-off">off</span>
+                    <div class="switcher-thumb"></div>
                   </div>
                 </label>
               </div>
@@ -78,25 +78,25 @@
                 <label for="square-switcher1" class="switcher square-switcher off">
                   <input id="square-switcher1" type="checkbox" name="square-switcher">          
                   <div class="switcher-track clearfix">
-                    <div class="switcher-thumb"></div>
                     <span class="switcher-on">
                       <i class="ui-icons icon-check"></i>
                     </span>
                     <span class="switcher-off">
                       <i class="ui-icons icon-close"></i>
                     </span>
+                    <div class="switcher-thumb"></div>
                   </div>
                 </label>
                 <label for="square-switcher2" class="switcher square-switcher on">
                   <input id="square-switcher2" type="checkbox" name="square-switcher" checked>          
                   <div class="switcher-track clearfix">
-                    <div class="switcher-thumb"></div>
                     <span class="switcher-on">
                       <i class="ui-icons icon-check"></i>
                     </span>
                     <span class="switcher-off">
                       <i class="ui-icons icon-close"></i>
                     </span>
+                    <div class="switcher-thumb"></div>
                   </div>
                 </label>
               </div>
@@ -358,7 +358,19 @@
               </div>
             </div>
 
-            <video src="" controls poster="png/video-poster.png"></video>
+            <div class="video">
+              <video src="" poster="png/video-poster.png">
+              </video>
+              <div class="controls">
+               <a class="play"><i class="ui-icons icon-play-button"></i></a>
+               <a class="mute"><i class="ui-icons icon-speaker"></i></a>
+               <a class="fullscreen"><i class="ui-icons icon-full-screen"></i></a>
+               <div class="progress">
+                 <span class="progress-bar"></span>
+                 <span class="progress-thumb"></span>
+               </div>
+             </div>
+            </div>
           </div>
 
         </div>

@@ -128,7 +128,7 @@ html {
 }
 
 .row {
-	padding: 1rem;
+	padding: .7rem 1rem;
 }
 .column-third {
 	float: left;
@@ -194,11 +194,13 @@ html {
 	}
 
 	.switcher-thumb {
-		display: inline-block;
+		// display: inline-block;
 		width: 2rem;
 		height: 2rem;
 		background-color: white;
 		border-radius: inherit;
+		// float: left;
+		transition: margin .5s linear;
 	}
 
 	.switcher-off {
@@ -210,6 +212,9 @@ html {
 		margin-top: .2rem;
 		margin-left: .4rem;
 		float: left;
+		.icon-check {
+			margin-left: -2px;
+		}
 	}
 
 	input {
@@ -221,9 +226,6 @@ html {
 
 			.switcher-on {
 				display: none;
-			} 
-			.switcher-thumb {
-				float: left;
 			}
 		}
 
@@ -235,7 +237,7 @@ html {
 				display: none;
 			} 
 			.switcher-thumb {
-				float: right;
+				margin-left: 1.85em;
 			}
 		}
 	}
@@ -391,10 +393,6 @@ input[type="text"] {
 .input-left-icon {
 	position: relative;
 
-	input {
-		padding-left: 2.5em;
-	}
-
 	.ui-icons {
 		position: absolute;
 		top: .6em;
@@ -406,6 +404,10 @@ input[type="text"] {
 .input-left-icon {
 	.ui-icons {
 		left: .5em;
+	}
+
+	input {
+		padding-left: 2.5em;
 	}
 }
 
@@ -828,8 +830,76 @@ $select-height: 32px;
 	
 }
 
-video {
-	width: 100%;
+.video {
+		
+	position: relative;
+
+	video {
+		width: 100%;
+	}
+
+	.controls {
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+
+		padding: .8rem 1rem;
+
+		color: white;
+		font-size: 1.1em;
+		background-color: rgba(255,255,255,.3);
+		border-radius: 3px;
+
+		&>* {
+			// display: inline-block;
+			vertical-align: middle;
+		}
+
+		.play {
+			float: left;
+			font-size: 1.4em;
+		}
+
+		.fullscreen,
+		.mute {
+			float: right;
+			margin-top: .2em;
+			margin-left: .5em;
+		}
+
+		.progress {
+			position: relative;
+
+			margin-top: .6em;
+			margin-left: 2em;
+			margin-right: 4em;
+
+			height: .5rem;
+			border-radius: 2px;
+			background-color: rgba(0,0,0,.3);
+		}
+		.progress-bar {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 40%;
+			background-color: $red;
+			border-radius: inherit;
+		}
+		.progress-thumb {
+			position: absolute;
+			left: 30%;
+			top: -1px;
+			bottom: -1px;
+			width: 7px;
+			height: 7px;
+			background-color: #fff;
+			border-radius: 50%;
+		}
+	}
+
 }
 
 @import "chart.scss";
