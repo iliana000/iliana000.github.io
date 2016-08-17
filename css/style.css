@@ -173,7 +173,14 @@ html {
     height: 1.7rem;
     vertical-align: middle;
     background-color: white;
-    border: 1px solid #dedede; }
+    border: 1px solid #dedede;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: .9;
+    text-align: center; }
   .checkbox.hover .figure, .checkbox:hover .figure, .radio.hover .figure, .radio:hover .figure {
     border-color: #a9cf55; }
   .checkbox input:checked + .figure, .radio input:checked + .figure {
@@ -182,8 +189,24 @@ html {
 
 .checkbox .figure {
   border-radius: 3px; }
+.checkbox input:checked + .figure:after {
+  content: '\e902';
+  font-family: 'ui-icons' !important;
+  font-size: .5em;
+  color: #a9cf55; }
 
 .radio .figure {
+  border-radius: 50%;
+  position: relative; }
+.radio input:checked + .figure:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #a9cf55;
+  top: .2em;
+  bottom: .2em;
+  left: .2em;
+  right: .2em;
   border-radius: 50%; }
 
 .circle-chart {

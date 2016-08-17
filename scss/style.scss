@@ -267,7 +267,14 @@ html {
 		height: 1.7rem;
 		vertical-align: middle;
 		background-color: white;
-		border: 1px solid #dedede;	
+		border: 1px solid #dedede;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: .9;
+		text-align: center;	
 	}
 
 	&.hover, &:hover {
@@ -281,11 +288,39 @@ html {
 	}
 }
 
-.checkbox .figure {
-	border-radius: 3px;
+.checkbox {
+	.figure {
+		border-radius: 3px;
+	}
+
+	input:checked + .figure:after {
+		content: '\e902';
+		font-family: 'ui-icons' !important;
+		font-size: .5em;
+		color: $green;
+	}
 }
-.radio .figure {
-	border-radius: 50%;
+.radio {
+	.figure {
+		border-radius: 50%;
+		position: relative;
+		// line-height: 1.3em;
+	}
+
+	input:checked + .figure:after {
+		content: '';
+		position: absolute;
+		// display: inline-block;
+		display: block;
+		background: $green;
+		top: .2em;
+		bottom: .2em;
+		left: .2em;
+		right: .2em;
+		// width: .8em;
+		// height: .8em;
+		border-radius: 50%;
+	}
 }
 
 
