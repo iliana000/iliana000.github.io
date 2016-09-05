@@ -1,9 +1,11 @@
 /* common basic styles */
 html {
   min-width: 960px;
-  font-size: 10px;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: lighter; }
+  font-size: .7vw;
+  font-family: "Open Sans", Arial, sans-serif; }
+  @media (max-width: 1400px) {
+    html {
+      font-size: 10px; } }
 
 body {
   min-width: 960px;
@@ -14,15 +16,6 @@ body {
   content: '';
   display: table;
   clear: both; }
-
-::-webkit-input-placeholder {
-  color: #aaa; }
-
-::-moz-placeholder {
-  color: #aaa; }
-
-:-ms-input-placeholder {
-  color: #aaa; }
 
 button {
   color: white;
@@ -65,12 +58,12 @@ button {
     .page-header .header-logo .logo {
       float: right;
       position: relative;
-      height: 42px;
+      height: 4.2em;
       width: 45%; }
     .page-header .header-logo img {
       position: absolute;
-      bottom: 1.1em;
-      right: 5%;
+      bottom: 11px;
+      right: 1em;
       width: 100%;
       float: right;
       vertical-align: middle; }
@@ -85,8 +78,7 @@ button {
     font-size: 1.4em; }
     .page-header .header-nav .mainmenu li {
       position: relative;
-      display: inline-block;
-      margin-left: -.3em; }
+      display: inline-block; }
       .page-header .header-nav .mainmenu li:hover {
         background: black; }
         .page-header .header-nav .mainmenu li:hover .submenu {
@@ -133,8 +125,6 @@ button {
     .page-header .header-contacts img {
       margin-left: 1em;
       width: 1em; }
-    .page-header .header-contacts b {
-      font-weight: bold; }
 
 .page-title {
   position: absolute;
@@ -166,8 +156,6 @@ button {
     padding: 10%;
     background-color: rgba(0, 11, 14, 0.6);
     font-size: 1.2em; }
-    .column .feature h2 {
-      font-size: 1.6em; }
     .column .feature button {
       display: none;
       margin-top: 1em; }
