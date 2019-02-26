@@ -83,7 +83,7 @@ class App extends Component {
     console.dir(this.state.templates);
     let list = this.state.houses.map( (data) =>
       (
-        <Grid item xs={6} key={data.id}>
+        <Grid item xs={12} sm={6} key={data.id}>
           <div className="card">
             {
               this.state.templates[this.state.templateN].template.map(({component, field, children}) => {
@@ -109,7 +109,7 @@ class App extends Component {
         <Grid item xs={12}>
           <Grid container spacing={16}>
               {this.state.templates.map((object, i) => (
-                <Grid item xs={1}>
+                <Grid item xs={3} sm={2} md={1}>
                   <Button variant="contained" color="primary" onClick={(e) => this.setTemplate(i)}>{i+1}</Button>
                 </Grid>
                 )
