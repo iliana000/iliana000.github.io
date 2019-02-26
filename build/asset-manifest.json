@@ -1,14 +1,14 @@
 {
-  "main.css": "/build/static/css/main.8623dbae.chunk.css",
-  "main.js": "/build/static/js/main.26309fbf.chunk.js",
-  "main.js.map": "/build/static/js/main.26309fbf.chunk.js.map",
+  "main.css": "/build/static/css/main.814a7890.chunk.css",
+  "main.js": "/build/static/js/main.b0d9aa92.chunk.js",
+  "main.js.map": "/build/static/js/main.b0d9aa92.chunk.js.map",
   "runtime~main.js": "/build/static/js/runtime~main.cb13a552.js",
   "runtime~main.js.map": "/build/static/js/runtime~main.cb13a552.js.map",
   "static/js/2.c12ce3c7.chunk.js": "/build/static/js/2.c12ce3c7.chunk.js",
   "static/js/2.c12ce3c7.chunk.js.map": "/build/static/js/2.c12ce3c7.chunk.js.map",
   "index.html": "/build/index.html",
-  "precache-manifest.05cc9aec936640c1e2916cd053c1a818.js": "/build/precache-manifest.05cc9aec936640c1e2916cd053c1a818.js",
+  "precache-manifest.96f99c2a44fe019864f467fe95294757.js": "/build/precache-manifest.96f99c2a44fe019864f467fe95294757.js",
   "service-worker.js": "/build/service-worker.js",
-  "static/css/main.8623dbae.chunk.css.map": "/build/static/css/main.8623dbae.chunk.css.map",
+  "static/css/main.814a7890.chunk.css.map": "/build/static/css/main.814a7890.chunk.css.map",
   "static/media/logo.svg": "/build/static/media/logo.5d5d9eef.svg"
 }
