@@ -24,7 +24,7 @@ class App extends Component {
   }
   componentDidMount() {
 
-    axios.defaults.baseURL = 'http://demo4452328.mockable.io';
+    axios.defaults.baseURL = 'https://demo4452328.mockable.io';
     axios.all([getHouses(), getTemplates()])
       .then(axios.spread((houses, templates) => {
         // Both requests are now complete
