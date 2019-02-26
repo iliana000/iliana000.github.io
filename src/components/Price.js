@@ -6,7 +6,7 @@ class Price extends Component {
 
   render() {
     return (
-      <h3>$ {this.props.price}</h3>
+      <h2 className="price">$ {this.props.price}</h2>
     );
   }
 }

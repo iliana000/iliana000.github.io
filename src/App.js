@@ -12,6 +12,7 @@ import Area from "./components/Area";
 import Image from "./components/Image";
 import Price from "./components/Price";
 
+
 class App extends Component {
 
   constructor(props) {
@@ -78,16 +79,21 @@ class App extends Component {
         <img src={logo} className="loading" alt="Загрузка"/>
       )
     }
-    let list = [];
+
     console.dir(this.state.templates);
-    list = this.state.houses.map( (data) =>
+    let list = this.state.houses.map( (data) =>
       (
         <Grid item xs={6} key={data.id}>
           <div className="card">
             {
-              this.state.templates[this.state.templateN].template.map(({component, field}) => {
-                let Component = this.getComponent(component);
-                return React.createElement(Component, {[field]: data[field]}, null)
+              this.state.templates[this.state.templateN].template.map(({component, field, children}) => {
+
+                let innerComp = null;
+                if (children) innerComp = children.map(
+                  ({component, field}) => React.createElement(this.getComponent(component), {[field]: data[field]}, null)
+                );
+
+                return React.createElement(this.getComponent(component), {[field]: data[field]}, innerComp);
               })
             }
             {/*<Address full_address={data.full_address} />*/}

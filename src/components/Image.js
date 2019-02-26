@@ -12,7 +12,9 @@ class Image extends Component {
     };
 
     return (
-      <div className="image" style={styles} title={"Фото "+this.props.full_address}> </div>
+      <div className="image" style={styles} title={"Фото "+this.props.full_address}>
+        {this.props.children}
+      </div>
     );
   }
 }
